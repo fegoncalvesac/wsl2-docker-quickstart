@@ -70,9 +70,9 @@ Parabéns, seu WSL2 já está funcionando:
 
 [Link do GIT](https://git-scm.com/download/win)
 
-# 🔗 Realize também a instalação das fontes abaixo, são fontes selecionadas pensando em melhor produtividade e visão de codigo
+# 🔗 Realize também a instalação das fontes abaixo, são fontes selecionadas pensando em melhor produtividade e visão de codigo.
 
-### Fontes e Themas
+### Fontes e Temas
 - [Fira Code](https://github.com/tonsky/FiraCode)
 - [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
 - [dracula-pro-themes](https://1drv.ms/u/s!AuXLpUXd3wwLh30BhC2OZNQbuogX?e=gVW0ac)
@@ -88,12 +88,12 @@ copie e cole dentro do arquivo e salve.
 basicamente dentro desse arquivo, eu defini que a fonte que vamos utilizar no terminal é a Jetbrains Mono, e os caminhos para 
 mapear o ubuntu, powershell, CMD e GIT BASH, alem das cores que irá utilizar o tema Dracula.
 
-![Settings Terminal](dotfiles/Settings.json%20(windows%20terminal).txt)
+[Settings Terminal](dotfiles/Settings.json%20(windows%20terminal).txt)
 
 Copie as informações todas do arquivo acima, e substitua no arquivo do terminal, após abrir será exibido como na imagem abaixo, com
 todas as ferramentas em um unico terminal como pode ser visto na imagem abaixo.
 
-[Terminal Configurado](img/terminal_configurado.png)
+![Terminal Configurado](img/terminal_configurado.png)
 
 ## O que o WSL 2 pode usar de recursos da sua máquina
 
@@ -217,7 +217,7 @@ Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docke
 O Docker Compose instalado agora estará na versão 2, para executa-lo em vez de `docker-compose` use `docker compose`.
 
 
-#### Erro ao iniciar o Docker no Ubuntu 22.04
+### Erro ao iniciar o Docker no Ubuntu 22.04
 
 > Se mesmo ao iniciar o serviço do Docker acontecer o seguinte erro ou similar:
 >
@@ -226,7 +226,7 @@ O Docker Compose instalado agora estará na versão 2, para executa-lo em vez de
 >
 > Rode novamente o `sudo service docker start`. Rode algum comando Docker como `docker ps` para verificar se está funcionando corretamente. Se não mostrar o erro acima, está ok.
 
-#### Systemd - Inicia o serviço do docker automaticamente (RECOMENDADO)
+### Systemd - Inicia o serviço do docker automaticamente (RECOMENDADO)
 
 O WSL é compatível com o `systemd`. O `systemd` é um sistema de inicialização e gerenciamento de serviços que é amplamente utilizado em distribuições Linux modernas. Ela permitirá que você use ferramentas mais complexas no Linux como snapd, LXD, etc.
 
@@ -249,7 +249,7 @@ Quando terminar a edição, pressione `Esc`, em seguida tecle `:` para entrar co
 
 Toda vez que esta mudança for realizada é necessário reiniciar o WSL com o comando `wsl --shutdown` no DOS ou PowerShell.
 
-#### Docker com Systemd
+### Docker com Systemd
 
 Quando ativamos o systemd, na maioria dos casos o Docker iniciará automaticamente, portanto se você se tem a linha `command = service docker start` no `/etc/wsl.conf`, comente-a com `#` e reinicie o WSL com o comando `wsl --shutdown`.
 
@@ -266,7 +266,7 @@ sudo systemctl enable containerd.service
 Pronto, basta reiniciar o WSL com o comando `wsl --shutdown` no DOS ou PowerShell para testar. Após abrir o WSL novamente, digite o comando `docker ps` para avaliar se o comando não retorna a mensagem acima: `Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?`
 
 
-## Dicas e truques básicos com WSL 2
+### Dicas e truques básicos com WSL 2
 
 * A performance do WSL 2 está em se executar tudo dentro do Linux, por isso evite executar seus projetos com ou sem Docker do caminho `/mnt/c`, pois você perderá performance.
 * Para abrir o terminal do WSL basta digitar o nome da distribuição no menu Iniciar ou executar `C:\Windows\System32\wsl.exe`.
@@ -289,3 +289,14 @@ echo 1 | sudo tee /proc/sys/vm/drop_caches
 ```
 * Acrescente `export DOCKER_BUILDKIT=1` no final do arquivo .profile do seu usuário do Linux para ganhar mais performance ao realizar builds com Docker. Execute o comando `source ~/.profile` para carregar esta variável de ambiente no ambiente do seu WSL 2.
 * No Windows 11 é possível iniciar o Docker automaticamente, veja a seção: [Dica para Windows 11](#dica-para-windows-11)
+
+## Dúvidas
+
+* O WSL 2 funciona junto com outras máquinas virtuais como **VirtualBox** ou **VMWare**? Siga a [referência](https://learn.microsoft.com/pt-br/windows/wsl/faq#poderei-executar-o-wsl-2-e-outras-ferramentas-de-virtualiza--o-de-terceiros--como-vmware-ou-virtualbox-)
+
+## Quer dicas como ser mais produtivo no Windows?
+
+Acesse os tutorias abaixo:
+
+- Configuração de ambiente de desenvolvimento produtivo: [https://github.com/fegoncalvesac/ambiente-dev-produtivo](https://github.com/argentinaluiz/ambiente-dev-produtivo)
+- Como montar um ambiente produtivo no VSCode: [https://github.com/argentinaluiz/my-vscode-settings](https://github.com/argentinaluiz/my-vscode-settings)
