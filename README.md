@@ -95,8 +95,17 @@ mapear o ubuntu, powershell, CMD e GIT BASH, alem das cores que irá utilizar o 
 
 [Settings Terminal](dotfiles/Settings.json%20(windows%20terminal).txt)
 
-Copie as informações todas do arquivo acima, e substitua no arquivo do terminal, após abrir será exibido como na imagem abaixo, com
-todas as ferramentas em um unico terminal como pode ser visto na imagem abaixo.
+Copie as informações todas do arquivo acima, e substitua no arquivo JSON do terminal, alterando o nome do seu usuario criado no ubuntu
+
+```txt
+"startingDirectory": "\\\\wsl$\\Ubuntu\\home\\felipe\\"
+```
+essa linha, é responsavel pelo caminho que vai abrir quando você executar o WSL com ubuntu, o diretorio que o ubuntu ira iniciar.
+
+![Terminal Configurado](img/alterar_user_wsl.PNG)
+
+após salvar e reiniciar o Windows Terminal, será exibido como na imagem abaixo, com
+todas as ferramentas em um unico terminal.
 
 ![Terminal Configurado](img/terminal_configurado.png)
 
