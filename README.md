@@ -1,5 +1,10 @@
 # 🔥 Guia 1 - Produtividades no Windows com (WSL2) + Docker.
 
+### Esse guia foi feito, utilizando em grande parte como base o guia rapido da codeedu fullcycle (https://github.com/codeedu/wsl2-docker-quickstart) 
+### Adaptado algumas informações e resumido para meu uso
+
+
+
 ## O que é o WSL2 ?
 
 O Windows Subsystem for Linux 2 (WSL2) é uma ferramenta desenvolvida pela Microsoft que permite aos usuários do Windows executar aplicativos e comandos Linux em um ambiente nativo do Windows. 
@@ -298,5 +303,5 @@ echo 1 | sudo tee /proc/sys/vm/drop_caches
 
 Acesse os tutorias abaixo:
 
-- Configuração de ambiente de desenvolvimento produtivo: [https://github.com/fegoncalvesac/ambiente-dev-produtivo](https://github.com/argentinaluiz/ambiente-dev-produtivo)
-- Como montar um ambiente produtivo no VSCode: [https://github.com/argentinaluiz/my-vscode-settings](https://github.com/argentinaluiz/my-vscode-settings)
+- Configuração de ambiente de desenvolvimento produtivo: [https://github.com/fegoncalvesac/ambiente-produtivo-quickstart](https://github.com/fegoncalvesac/ambiente-produtivo-quickstart)
+- Como montar um ambiente produtivo no VSCode: [https://github.com/fegoncalvesac/vscode-settings](https://github.com/fegoncalvesac/vscode-settings)
