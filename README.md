@@ -49,7 +49,7 @@ Após o término do comando, você deverá criar um **nome de usuário** que pod
 
 Para abrir uma nova janela do Ubuntu, basta digitar `Ubuntu` no menu iniciar e clicar no ícone do Ubuntu.	
 
-![Exemplo Ubuntu](img/ubuntu.png)
+![Ex Ubuntu](img/ubuntu.png)
 
 
 ### (Opcional) Alterar a versão de uma distribuição do Linux de WSL 1 para WSL 2
