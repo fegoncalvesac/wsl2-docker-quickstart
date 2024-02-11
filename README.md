@@ -1,4 +1,4 @@
-# 🔥 Guia 1 - Produtividades no Windows com (WSL2) + Docker.
+# 🔥 Guia 1 - Produtividade no Windows Terminal com (WSL2) + Docker.
 
 ### Esse guia foi feito, utilizando em grande parte como base o guia rapido da codeedu fullcycle (https://github.com/codeedu/wsl2-docker-quickstart) 
 
