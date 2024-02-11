@@ -10,6 +10,24 @@ Com o WSL2, os desenvolvedores podem ter uma experiência de desenvolvimento mai
 
 ## Instalação do WSL 2 - Windows 10/11
 
+## Requisitos mínimos
+
+* Windows 10 Home ou Professional 
+  - Versão 2004 ou superior (Build 19041 ou superior).
+  - Versões mais antigas requerem a instalação manual do WSL 2. Ver tutorial [https://learn.microsoft.com/en-us/windows/wsl/install-manual](https://learn.microsoft.com/en-us/windows/wsl/install-manual).
+
+* Windows 11 Home ou Professional
+  - Versão 22000 ou superior (qualquer Windows 11).
+
+* Uma máquina compatível com virtualização (verifique a disponibilidade de acordo com a marca do seu processador. Se sua máquina for mais antiga pode ser necessária habilita-la na BIOS).
+
+* Pelo menos 4GB de memória RAM (Recomendado 8GB).
+
+Provavelmente seu Windows já está na versão suportada, mas verifique isto acessando o `menu de notificações perto do relógio > Todas as configurações > Sistema > Sobre`. Caso não esteja, use o Assistente do Windows Update para atualizar a sua versão do Windows.
+
+**É essencial manter o Windows atualizado, pois o WSL 2 depende de uma versão atualizada do Hyper-V. Verifique o Windows Update.**
+
+
 ### Windows Update
 Verifique se seu Windows está atualizado, pois o WSL 2 depende de uma versão atualizada do Hyper-V. Verifique o Windows Update.
 
